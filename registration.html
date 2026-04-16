@@ -103,7 +103,7 @@ document.querySelector("#registerForm").addEventListener("submit", async functio
   const password = document.querySelector("input[name='password']").value;
 
   try {
-    const res = await fetch("http://localhost:5000/api/auth/register", {
+    const res = await fetch("https://shri-backend-q693.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
